@@ -1,0 +1,21 @@
+{
+  "adInterstitialOn" : true,
+  "adInterstitialUnitId" : "34bbe1a5fdd9bd78fac3f379d0a3a0e8ebbdc65784696e1d",
+  "adUnitId" : "ca-app-pub-9671413153930477~3693017144",
+  "captcha" : 5,
+  "confirmRefVal" : 7,
+  "emulator" : true,
+  "freqInterstitial" : 20,
+  "intervalNotif" : 3600000,
+  "max" : 86,
+  "maxDay" : 58,
+  "min" : 50,
+  "minOut" : 400000,
+  "que" : false,
+  "rate" : 0.62,
+  "referralBonus" : 2600,
+  "rooted" : true,
+  "timeInterval" : 660000,
+  "vReword2" : 0,
+  "vassalBonus" : 3
+}

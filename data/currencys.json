@@ -1,0 +1,294 @@
+{
+  "fiat": [
+    {
+      "code": "USD",
+      "nameRu": "Доллар США",
+      "symbol": "$",
+      "name": "United States Dollar"
+    },
+    {
+      "code": "AUD",
+      "nameRu": "Австралийский доллар",
+      "symbol": "$",
+      "name": "Australia Dollar"
+    },
+    {
+      "code": "BRL",
+      "nameRu": "Бразильский реал",
+      "symbol": "R$",
+      "name": "Brazil Real"
+    },
+    {
+      "code": "CAD",
+      "nameRu": "Канадский доллар",
+      "symbol": "C$",
+      "name": "Canada Dollar"
+    },
+    {
+      "code": "CHF",
+      "nameRu": "Швейцарский франк",
+      "symbol": "Fr",
+      "name": "Switzerland Franc"
+    },
+    {
+      "code": "CLP",
+      "nameRu": "Чилийский песо",
+      "symbol": "$",
+      "name": "Chile Peso"
+    },
+    {
+      "code": "CNY",
+      "nameRu": "Китайский юань",
+      "symbol": "¥",
+      "name": "China Yuan Renminbi"
+    },
+    {
+      "code": "DKK",
+      "nameRu": "Датская крона",
+      "symbol": "kr",
+      "name": "Denmark Krone"
+    },
+    {
+      "code": "EUR",
+      "nameRu": "ЕВРО",
+      "symbol": "€",
+      "name": "Euro Member Countries"
+    },
+    {
+      "code": "GBP",
+      "nameRu": "Фунт стерлингов",
+      "symbol": "₤",
+      "name": "United Kingdom Pound"
+    },
+    {
+      "code": "HKD",
+      "nameRu": "Гонконгский доллар",
+      "symbol": "$",
+      "name": "Hong Kong Dollar"
+    },
+    {
+      "code": "INR",
+      "nameRu": "Индийская рупия",
+      "symbol": "₹",
+      "name": "India Rupee"
+    },
+    {
+      "code": "ISK",
+      "nameRu": "Исландская крона",
+      "symbol": "kr",
+      "name": "Iceland Krona"
+    },
+    {
+      "code": "JPY",
+      "nameRu": "Иена",
+      "symbol": "¥",
+      "name": "Japan Yen"
+    },
+    {
+      "code": "KRW",
+      "nameRu": "Южнокорейский вон",
+      "symbol": "₩",
+      "name": "Korea (South) Won"
+    },
+    {
+      "code": "NZD",
+      "nameRu": "Новозеландский доллар",
+      "symbol": "$",
+      "name": "New Zealand Dollar"
+    },
+    {
+      "code": "PLN",
+      "nameRu": "Злотый",
+      "symbol": "zł",
+      "name": "Poland Zloty"
+    },
+    {
+      "code": "RUB",
+      "nameRu": "Российский рубль",
+      "symbol": "₽",
+      "name": "Russia Ruble"
+    },
+    {
+      "code": "SEK",
+      "nameRu": "Шведская крона",
+      "symbol": "kr",
+      "name": "Sweden Krona"
+    },
+    {
+      "code": "SGD",
+      "nameRu": "Сингапурский доллар",
+      "symbol": "S$",
+      "name": "Singapore Dollar"
+    },
+    {
+      "code": "THB",
+      "nameRu": "Бат",
+      "symbol": "฿",
+      "name": "Thailand Baht"
+    },
+    {
+      "code": "TWD",
+      "nameRu": "Тайваньский доллар",
+      "symbol": "NT$",
+      "name": "Taiwan New Dollar"
+    },
+    {
+      "code": "UAH",
+      "nameRu": "Украинская гривна",
+      "symbol": "₴",
+      "name": "Ukraine Hryvnia"
+    }
+  ],
+  "crypto": [
+    {
+      "code": "BTC",
+      "name": "Bitcoin",
+      "img": "https://i.imgur.com/3i3DxgM.png",
+      "site": "https://bitcoin.org"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethereum",
+      "img": "https://i.imgur.com/BeYEAi1.png?1",
+      "site": "https://www.ethereum.org/"
+    },
+    {
+      "code": "EOS",
+      "name": "EOS.io",
+      "img": "https://i.imgur.com/nIqxGBe.png",
+      "site": "https://eos.io/"
+    },
+    {
+      "code": "ETC",
+      "name": "Ethereum Classic",
+      "img": "https://i.imgur.com/b0tz3dT.png?1",
+      "site": "https://ethereumclassic.org/"
+    },
+    {
+      "code": "BCH",
+      "name": "Bitcoin Cash",
+      "img": "https://i.imgur.com/wTn6ne5.jpg",
+      "site": "https://www.bitcoincash.org/"
+    },
+    {
+      "code": "LTC",
+      "name": "Litecoin",
+      "img": "https://i.imgur.com/t91HtcY.png",
+      "site": "https://litecoin.org/"
+    },
+    {
+      "code": "XRP",
+      "name": "Ripple",
+      "img": "https://i.imgur.com/xRQrW1n.png",
+      "site": "https://ripple.com/"
+    },
+    {
+      "code": "TRX",
+      "name": "Tronix",
+      "img": "https://i.imgur.com/wOeWbRD.png",
+      "site": "https://tron.network"
+    },
+    {
+      "code": "VEN",
+      "name": "Vechain",
+      "img": "https://i.imgur.com/XG2Ht0U.png",
+      "site": "https://www.vechain.com/"
+    },
+    {
+      "code": "ADA",
+      "name": "Cardano",
+      "img": "https://i.imgur.com/3qSd93a.png",
+      "site": "https://www.cardano.org"
+    },
+    {
+      "code": "ZEC",
+      "name": "Zcash",
+      "img": "https://i.imgur.com/WkxHLym.png?1",
+      "site": "https://z.cash/"
+    },
+    {
+      "code": "XMR",
+      "name": "Monero",
+      "img": "https://i.imgur.com/gmIcCQn.png",
+      "site": "https://monero.org/"
+    },
+    {
+      "code": "DASH",
+      "name": "Dash",
+      "img": "https://i.imgur.com/2In7LpN.png",
+      "site": "https://www.dash.org"
+    },
+    {
+      "code": "NEO",
+      "name": "NEO.org",
+      "img": "https://i.imgur.com/FMrmKlV.png",
+      "site": "https://neo.org/"
+    },
+    {
+      "code": "XEM",
+      "name": "NEM.io",
+      "img": "https://i.imgur.com/hUgejcM.png",
+      "site": "https://nem.io/"
+    },
+    {
+      "code": "IOT",
+      "name": "Iota",
+      "img": "https://i.imgur.com/v8lEjZy.png",
+      "site": "https://www.iota.org/"
+    },
+    {
+      "code": "SKY",
+      "name": "Skycoin",
+      "img": "https://i.imgur.com/xzxtD2M.png",
+      "site": "https://www.skycoin.net/"
+    },
+    {
+      "code": "ONT",
+      "name": "Ontology",
+      "img": "https://i.imgur.com/KCnolEU.png?1",
+      "site": "https://ont.io/"
+    },
+    {
+      "code": "WAVES",
+      "name": "Waves",
+      "img": "https://i.imgur.com/R9oAuYw.png?1",
+      "site": "https://wavesplatform.com/"
+    },
+    {
+      "code": "QTUM",
+      "name": "Qtum",
+      "img": "https://i.imgur.com/9GOReU5.png?1",
+      "site": "https://qtum.org"
+    },
+    {
+      "code": "XLM",
+      "name": "Stellar",
+      "img": "https://i.imgur.com/xGS49sS.png",
+      "site": "https://www.stellar.org"
+    },
+    {
+      "code": "CET",
+      "name": "CoinEx token",
+      "img": "https://i.imgur.com/hXTpEpG.png",
+      "site": "https://www.coinex.com"
+    },
+    {
+      "code": "HSR",
+      "name": "Hshare",
+      "img": "https://i.imgur.com/F4qO3nM.png",
+      "site": "https://h.cash"
+    },
+    {
+      "code": "OMG",
+      "name": "OmiseGo",
+      "img": "https://i.imgur.com/sOAGYKR.png",
+      "site": "https://omisego.network"
+    },
+    {
+      "code": "BTG",
+      "name": "Bitcoin Gold",
+      "img": "https://i.imgur.com/M6H7Nus.png",
+      "site": "https://bitcoingold.org/"
+    }
+  ]
+}

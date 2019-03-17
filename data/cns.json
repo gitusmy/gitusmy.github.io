@@ -12,18 +12,6 @@
       "site": "https://www.ethereum.org/"
     },
     {
-      "code": "EOS",
-      "name": "EOS.io",
-      "img": "https://i.imgur.com/nIqxGBe.png",
-      "site": "https://eos.io/"
-    },
-    {
-      "code": "ETC",
-      "name": "Ethereum Classic",
-      "img": "https://i.imgur.com/b0tz3dT.png?1",
-      "site": "https://ethereumclassic.org/"
-    },
-    {
       "code": "BCH",
       "name": "Bitcoin Cash",
       "img": "https://i.imgur.com/wTn6ne5.jpg",
@@ -34,29 +22,5 @@
       "name": "Litecoin",
       "img": "https://i.imgur.com/t91HtcY.png",
       "site": "https://litecoin.org/"
-    },
-    {
-      "code": "XRP",
-      "name": "Ripple",
-      "img": "https://i.imgur.com/xRQrW1n.png",
-      "site": "https://ripple.com/"
-    },
-    {
-      "code": "ZEC",
-      "name": "Zcash",
-      "img": "https://i.imgur.com/WkxHLym.png?1",
-      "site": "https://z.cash/"
-    },
-    {
-      "code": "XMR",
-      "name": "Monero",
-      "img": "https://i.imgur.com/gmIcCQn.png",
-      "site": "https://monero.org/"
-    },
-    {
-      "code": "DASH",
-      "name": "Dash",
-      "img": "https://i.imgur.com/2In7LpN.png",
-      "site": "https://www.dash.org"
     }
   ]

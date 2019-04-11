@@ -1,14 +1,15 @@
 {
-  "captcha" : 5,
-  "confirmRefVal" : 7,
+  "captcha" : 7,
+  "confirmRefVal" : 8,
   "emulator" : true,
-  "intervalNotif" : 3600000,
-  "max" : 86,
-  "maxDay" : 58,
-  "min" : 50,
+  "intervalNotif" : 3700000,
+  "max" : 11,
+  "maxDay" : 102,
+  "min" : 4,
   "minOut" : 300000,
-  "rate" : 0.62,
-  "referralBonus" : 2700,
+  "onads" : true,
+  "rate" : 0.94,
+  "referralBonus" : 2800,
   "rooted" : true,
-  "vassalBonus" : 3
+  "vassalBonus" : 5
 }

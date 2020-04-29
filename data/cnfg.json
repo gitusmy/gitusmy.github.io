@@ -11,5 +11,6 @@
   "rate" : 0.94,
   "referralBonus" : 2800,
   "rooted" : true,
-  "vassalBonus" : 5
+  "vassalBonus" : 5,
+  "freqPlayad" : 2
 }

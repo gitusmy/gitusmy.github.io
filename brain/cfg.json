@@ -4,6 +4,6 @@
   "startRate":2,
   "frate":3,
   "oneAction:":"true",
-  "off":"false",
+  "off":"true",
   "startSession":2
 }

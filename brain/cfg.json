@@ -1,9 +1,9 @@
 {
   "fad":3,
   
-  "startRate":7,
+  "startRate":2,
   "frate":999,
   "oneAction":true,
   "off":false,
-  "startSession":7
+  "startSession":2
 }

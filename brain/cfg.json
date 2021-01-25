@@ -1,10 +1,10 @@
 {
-  "fad":3,
+  "fad":4,
   
   "startRate":3,
   "frate":999,
   "oneAction":true,
   "off":false,
   "startSession":-1,
-  "estLevel":10
+  "estLevel":300
 }

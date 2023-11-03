@@ -1,11 +1,11 @@
 {
   "fad":51,
   
-  "startRate":3,
+  "startRate":7,
   "frate":999,
   "oneAction":true,
   "off":false,
   "startSession":-1,
   
-  "estLevel":17
+  "estLevel":32
 }

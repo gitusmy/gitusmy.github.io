@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading...</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .loading-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="link-message" class="loading-text">Loading...</div>
+  <script>
+    ///cards.html?link=aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS52b2NhYnVsYXJ5LmZsYXNoY2FyZHMmaGw9ZXMmZ2w9RVM=
+    const googlePlayPrefix = "https://play.google.com/store/apps/details?id=";
+    const url = new URL(window.location.href);
+
+    const paramValue = url.searchParams.get('link');
+
+    const errorDiv = document.getElementById('link-message');
+
+    if(paramValue != null) {
+        try {
+            const appLink =  atob(paramValue) //decodeURIComponent(paramValue)
+            if(appLink.startsWith(googlePlayPrefix)) {
+                window.location.href = appLink
+                console.log('OK');
+                console.log(appLink);
+            } else {
+                errorDiv.textContent = 'Could not find the right app'
+            }
+        }  catch (e) {
+            errorDiv.textContent = 'Unable to decode string';
+        }
+    } else {
+        errorDiv.textContent = 'Missing parameter, redirect failed';
+    }
+    console.log(paramValue);
+  </script>
+</body>
+</html>
+

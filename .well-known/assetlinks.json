@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.vocabulary.flashcards",
+      "sha256_cert_fingerprints": [
+        "B2:77:7D:F5:C6:CD:ED:90:A6:19:41:C5:6B:74:45:79:F1:32:1A:BF:F7:59:7A:AF:75:D0:3B:B4:72:23:AD:A4"
+      ]
+    }
+  }
+]

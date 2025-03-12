@@ -1,53 +1,150 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Loading...</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-    }
+<head lang="en">
 
-    .loading-text {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Main SEO meta tags -->
+    <title>Card ai - Your Personal Vocab Notebook</title>
+    <link rel="icon" type="image/svg+xml" href="https://kranus.com/card/imgs/main_logo2.svg">
+    <meta name="description" content="Card ai - an effective way to learn words, phrases, and languages using innovative flashcards and advanced AI technology.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://kranus.com/card">
+
+     <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Card ai - Your Personal Vocab Notebook">
+    <meta property="og:description" content="Card ai - an effective way to learn words, phrases, and languages using innovative flashcards and advanced AI technology.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kranus.com/card">
+    <meta property="og:image" content="https://i.imgur.com/qNJVlYX.png">
+
+     <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Card ai - Your Personal Vocab Notebook">
+    <meta name="twitter:description" content="Card ai - an effective way to learn words, phrases, and languages using innovative flashcards and advanced AI technology.">
+    <meta name="twitter:image" content="https://i.imgur.com/qNJVlYX.png">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .loading-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            padding: 0 24px;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .app-store-button {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body>
-  <div id="link-message" class="loading-text">Loading...</div>
-  <script>
-    ///cards.html?link=aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPWNvbS52b2NhYnVsYXJ5LmZsYXNoY2FyZHMmaGw9ZXMmZ2w9RVM=
+<body></body>
+    <img src="https://kranus.com/card/imgs/main_logo2.svg" alt="App Logo" class="logo">
+    <div id="link-message" class="loading-text">Loading...</div>
+    <a id="app-store-button" class="app-store-button" href="https://apps.apple.com" style="display: none;">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+    </a>
+    <script>
     const googlePlayPrefix = "https://play.google.com/store/apps/details?id=";
     const url = new URL(window.location.href);
 
     const paramValue = url.searchParams.get('link');
 
     const errorDiv = document.getElementById('link-message');
+    const appStoreButton = document.getElementById('app-store-button');
 
     if(paramValue != null) {
-        try {
-            const appLink =  atob(paramValue) //decodeURIComponent(paramValue)
-            if(appLink.startsWith(googlePlayPrefix)) {
-                window.location.href = appLink
-                console.log('OK');
-                console.log(appLink);
-            } else {
-                errorDiv.textContent = 'Could not find the right app'
+        let os = detectOS();
+        if (os == "android") {
+            try {
+                const appLink =  atob(paramValue) //decodeURIComponent(paramValue)
+                if(appLink.startsWith(googlePlayPrefix)) {
+                    window.location.href = appLink
+                    console.log('OK');
+                    console.log(appLink);
+                } else {
+                    errorDiv.textContent = 'Could not find the right app'
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.vocabulary.flashcards';
+                }
+            }  catch (e) {
+                errorDiv.textContent = 'Unable to decode string';
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.vocabulary.flashcards';
             }
-        }  catch (e) {
-            errorDiv.textContent = 'Unable to decode string';
+        } 
+        else if (os == "iOS") {
+            errorDiv.textContent = "Open the Card ai app or download the app from the App Store";
+            appStoreButton.style.display = 'block';
+            appStoreButton.onclick = () => {
+                window.location.href = 'https://apps.apple.com'; //'https://apps.apple.com/app/idXXXXXXXXXX'
+            };
+        }
+        else if (os == "other") {
+            errorDiv.textContent = 'Unsupported OS';
+            window.location.href = 'https://kranus.com/card/';
         }
     } else {
         errorDiv.textContent = 'Missing parameter, redirect failed';
+        window.location.href = 'https://kranus.com/card/';
     }
     console.log(paramValue);
+
+    function detectOS() {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // Перевірка на Android
+        if (/android/i.test(userAgent)) {
+            return "android";
+        }
+
+        // Перевірка на iOS (iPhone, iPad, iPod)
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return "iOS";
+        }
+
+        // Якщо не Android і не iOS, повертаємо "інше"
+        return "other";
+    }
   </script>
+
+    <!-- Structured Data for search engines -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Card ai",
+        "url": "https://kranus.com/card",
+        "logo": "https://kranus.com/card/imgs/main_logo2.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "cstmsp@outlook.com",
+            "contactType": "customer service"
+        }
+    }
+    </script>
 </body>
 </html>
-

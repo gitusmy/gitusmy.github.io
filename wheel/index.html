@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/app-icon.png" type="image/png" />
+  <title>The Spinning Roulette Wheel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1a1a2e;
+      background: #f8f9fc;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ─── Navigation ─── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-part1 {
+      color: #6c63ff;
+    }
+
+    .logo-part2 {
+      color: #1a1a2e;
+    }
+
+    .app-icon {
+      width: 36px;
+      height: 36px;
+      vertical-align: middle;
+      border-radius: 8px;
+    }
+
+    /* ─── Hero ─── */
+    .hero {
+      text-align: center;
+      padding: 80px 0 60px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: #e8e7ff;
+      color: #6c63ff;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+      color: #1a1a2e;
+    }
+
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, #6c63ff, #e63946);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      max-width: 640px;
+      margin: 0 auto 36px;
+    }
+
+    .hero .trust {
+      font-size: 0.95rem;
+      color: #888;
+      margin-top: 16px;
+    }
+
+    .hero .trust strong {
+      color: #6c63ff;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #1a1a2e;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 16px 36px;
+      border-radius: 14px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-appstore:hover {
+      background: #2d2d4a;
+      transform: translateY(-2px);
+    }
+
+    .btn-appstore svg {
+      width: 28px;
+      height: 28px;
+      fill: #fff;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 48px;
+      letter-spacing: -0.5px;
+    }
+
+    /* ─── Uses ─── */
+    .uses-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .uses-list li {
+      list-style: none;
+      background: #fff;
+      border-radius: 12px;
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .uses-list li::before {
+      content: "✦";
+      color: #6c63ff;
+      font-size: 0.8rem;
+    }
+
+    /* ─── CTA bottom ─── */
+    .cta-section {
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .cta-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      font-size: 0.85rem;
+      color: #aaa;
+      border-top: 1px solid #eee;
+    }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .section-title {
+        font-size: 1.5rem;
+      }
+      .btn-appstore {
+        padding: 14px 28px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo"><img src="images/app-icon.png" alt="" class="app-icon" /> <span class="logo-part1">The Spinning</span> <span class="logo-part2">Roulette Wheel</span></div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">🔐 Verifiable Randomness</div>
+    <h1>
+      Randomness is an illusion.<br />
+      <span class="highlight">Determinism is freedom.</span>
+    </h1>
+    <p>
+      Can't decide who picks the restaurant, does the dishes, or buys coffee today?
+      Spin the wheel — the result is deterministic and verifiable by everyone.
+    </p>
+    <a class="btn-appstore" href="#" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-111.1-61.7-116.7z"/></svg>
+      Download on the App Store
+    </a>
+    <p class="trust">
+      <strong>Two modes:</strong> personal roulette · online with friends
+    </p>
+  </section>
+
+  <!-- Use cases -->
+  <section class="section">
+    <h2 class="section-title">What You Can Decide</h2>
+    <ul class="uses-list">
+      <li>Who picks the restaurant or movie</li>
+      <li>Who does the dishes after the party</li>
+      <li>Who buys coffee today</li>
+      <li>Who orders pizza</li>
+      <li>Where to go tonight</li>
+      <li>Who organizes the friends' gathering</li>
+      <li>Who does the task in a game</li>
+      <li>Who gives the presentation</li>
+      <li>Who's on duty this week</li>
+      <li>Choosing dinner from several options</li>
+      <li>Parties, contests, penalty games</li>
+      <li>Weddings, events, bingo, raffles</li>
+    </ul>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to trust fate?</h2>
+    <p>One spin — and the decision is final for everyone.</p>
+    <a class="btn-appstore" href="#" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-111.1-61.7-116.7z"/></svg>
+      Download on the App Store
+    </a>
+  </section>
+
+</div>
+
+<footer>
+  <div class="container">
+    &copy; 2026 The Spinning Roulette Wheel
+  </div>
+</footer>
+
+</body>
+</html>

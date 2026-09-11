@@ -6,23 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Main SEO meta tags -->
-  <title>Card ai - Your Personal Vocab Notebook</title>
+  <title>Card AI — Vocabulary Notebook with AI | Learn Languages Faster</title>
   <link rel="icon" type="image/svg+xml" href="https://kranus.com/card/imgs/main_logo2.svg">
-  <meta name="description" content="Card ai - an effective way to learn words, phrases, and languages using innovative flashcards and advanced AI technology.">
+  <meta name="description" content="Card AI — flashcards app &amp; vocabulary builder with spaced repetition and AI. Create custom collections, generate AI flashcards, learn languages faster offline.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://kranus.com/card">
   
   <!-- Open Graph meta tags -->
-  <meta property="og:title" content="Card ai - Your Personal Vocab Notebook">
-  <meta property="og:description" content="Card ai - an effective way to learn words, phrases, and languages using innovative flashcards and advanced AI technology.">
+  <meta property="og:title" content="Card AI — Vocabulary Notebook with AI | Learn Languages Faster">
+  <meta property="og:description" content="Card AI — flashcards app &amp; vocabulary builder with spaced repetition and AI. Create custom collections, generate AI flashcards, learn languages faster offline.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kranus.com/card">
   <meta property="og:image" content="https://kranus.com/card/imgs/image_header_slide.jpg">
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Card ai - flashcards with AI on header background">
+  <meta property="og:site_name" content="Card AI">
+  <meta property="og:locale" content="en_US">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Card ai - Your Personal Vocab Notebook">
-  <meta name="twitter:description" content="Card ai - an effective way to learn words, phrases, and languages using innovative flashcards and advanced AI technology.">
+  <meta name="twitter:site" content="@CardAI">
+  <meta name="twitter:title" content="Card AI — Vocabulary Notebook with AI | Learn Languages Faster">
+  <meta name="twitter:description" content="Card AI — flashcards app &amp; vocabulary builder with spaced repetition and AI. Create custom collections, generate AI flashcards, learn languages faster offline.">
   <meta name="twitter:image" content="https://kranus.com/card/imgs/image_header_slide.jpg">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -59,6 +66,19 @@
       font-size: 1.2rem; 
       margin-bottom: 2rem; 
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content h2 {
+      font-size: 1.6rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      color: #e8f5e9;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      line-height: 1.4;
+    }
+
+    .hero-content .hero-desc {
+      font-size: 1.05rem;
     }
 
     .download-buttons a {
@@ -125,16 +145,212 @@
       color: #666;
     }
 
-    /* Footer */
-    footer {
-      background: #333;
-      color: #fff;
+    /* FAQ section - SEO H2 */
+    #faq {
+      background: #f9f9f9;
+      padding: 4rem 2rem;
+    }
+    #faq h2 {
       text-align: center;
-      padding: 2rem 0;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+    }
+    .faq {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1.5rem;
+    }
+    .faq-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+    }
+    .faq-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #1a1a1a;
+      font-weight: 600;
+    }
+    .faq-item p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
     }
 
-    footer p {
-      margin: 0.5rem 0;
+    /* Footer - аналогічний kranus.com (cid-u6kPpka9hs) */
+    .footer-kranus {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      background-color: #232323;
+      color: #fff;
+    }
+    .footer-kranus .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .footer-kranus .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+    .footer-kranus .mbr-white { color: #fff; }
+    .footer-kranus .col-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    .footer-kranus .col-12 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+    @media (min-width: 768px) {
+      .footer-kranus .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+    @media (min-width: 992px) {
+      .footer-kranus .col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      .footer-kranus .col-6.col-lg-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+    }
+    .footer-kranus .media-wrap {
+      padding: 0;
+    }
+    .footer-kranus .media-wrap img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      max-width: 210px;
+    }
+    @media (max-width: 991px) {
+      .footer-kranus .media-wrap {
+        margin-bottom: 1rem;
+      }
+    }
+    @media (max-width: 767px) {
+      .footer-kranus .row {
+        text-align: center;
+      }
+      .footer-kranus .row > div {
+        margin: auto;
+      }
+      .footer-kranus .social-row {
+        justify-content: center;
+      }
+    }
+    .footer-kranus .mbr-section-subtitle {
+      font-family: 'Jost', 'Arial', sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 0.5rem;
+    }
+    .footer-kranus .mbr-text {
+      color: #bbbbbb;
+      font-family: 'Jost', 'Arial', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .footer-kranus .list {
+      list-style: none;
+      padding-left: 0;
+      color: #bbbbbb;
+      font-family: 'Jost', 'Arial', sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    .footer-kranus .list a {
+      color: #bbbbbb;
+      text-decoration: none;
+    }
+    .footer-kranus .list a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .footer-kranus .email-label {
+      color: #888;
+      font-size: 0.85em;
+      margin-left: 0.4rem;
+      white-space: nowrap;
+      font-family: 'Jost', 'Arial', sans-serif;
+    }
+    @media (max-width: 767px) {
+      .footer-kranus .email-label {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.15rem;
+      }
+    }
+    @media (max-width: 991px) {
+      .footer-kranus .list {
+        margin-bottom: 2rem;
+      }
+    }
+    @media (min-width: 992px) {
+      .footer-kranus .list {
+        margin-bottom: 0;
+      }
+    }
+    .footer-kranus .social-row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer-kranus .soc-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-right: 0.5rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      transition: opacity 0.2s;
+    }
+    .footer-kranus .soc-item a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+    }
+    .footer-kranus .soc-item i {
+      color: #000;
+      font-size: 1.2rem;
+    }
+    .footer-kranus .soc-item:hover {
+      opacity: 0.85;
+    }
+    .footer-kranus .footer-bottom {
+      border-top: 1px solid #333;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      text-align: center;
+      color: #bbbbbb;
+      font-size: 0.95rem;
+      font-family: 'Jost', 'Arial', sans-serif;
+    }
+    .footer-kranus .footer-bottom a {
+      color: #bbbbbb;
+      text-decoration: none;
+    }
+    .footer-kranus .footer-bottom a:hover {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -142,8 +358,9 @@
   <!-- Header -->
   <header>
     <div class="hero-content">
-      <h1>Card ai - Your Personal Vocab Notebook</h1>
-      <p>Flashcards with artificial intelligence allow you to effectively learn foreign languages, as well as terms from various fields of knowledge - from science to the humanities.</p>
+      <h1>Card AI — Vocabulary Notebook with AI</h1>
+      <h2>Vocabulary Builder with Spaced Repetition — Learn Languages Faster</h2>
+      <p class="hero-desc">Flashcards app with AI generation, custom collections and spaced repetition to memorize words, phrases and languages effectively — offline and online.</p>
       <div class="download-buttons">
         <a href="https://apps.apple.com/app/id6743166876" target="_blank">
           <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
@@ -211,13 +428,75 @@
       </div>
     </div>
   </section>
+
+  <!-- FAQ section - SEO H2 -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>What is Card AI flashcards app?</h3>
+        <p>Card AI is a vocabulary builder and flashcards app with AI generation and spaced repetition to help you memorize words, phrases and languages faster.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How does spaced repetition work?</h3>
+        <p>Smart repetition schedules reviews right before you forget — increasing intervals for memorized cards and shortening them for difficult words, maximizing retention.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I create my own vocabulary notebooks?</h3>
+        <p>Yes — create custom collections, import/export via Excel, share with friends and generate AI flashcards from any text or topic.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does the app work offline?</h3>
+        <p>Yes, learn anywhere offline. Your vocabulary notebooks, audio playback and statistics are available without internet.</p>
+      </div>
+    </div>
+  </section>
   
-  <!-- Footer -->
-  <footer>
+  <!-- Footer - аналогічний kranus.com, logo: frame-349.svg -->
+  <footer class="footer-kranus" id="footer4-e">
     <div class="container">
-      <p>&copy; 2025 Card ai. All rights reserved.</p>
-      <p>Contact: <a href="mailto:cstmsp@outlook.com" style="color: #8f9492;">cstmsp@outlook.com</a></p>
-      <p><a href="https://kranus.com/card/policy" target="_blank" style="color: #acafae;">Privacy Policy</a> | <a href="https://kranus.com/card/tos" target="_blank" style="color: #acafae;">Terms of Service</a></p>
+      <div class="row mbr-white">
+        <div class="col-6 col-lg-3">
+          <div class="media-wrap col-md-8 col-12">
+            <img src="imgs/frame-349.svg" alt="Card ai Logo">
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"><strong>Feedback</strong></h5>
+          <p class="mbr-text mbr-fonts-style mb-4 display-4">Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.</p>
+          <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7"><strong>Contact Us</strong></h5>
+          <div class="social-row display-7">
+            <div class="soc-item">
+              <a href="mailto:support@kranus.com" title="Product Support — support@kranus.com">
+                <i class="fas fa-headset mbr-iconfont"></i>
+              </a>
+            </div>
+            <div class="soc-item">
+              <a href="mailto:contact@kranus.com" title="General Inquiries — contact@kranus.com">
+                <i class="fas fa-at mbr-iconfont"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"><strong>Address</strong></h5>
+          <ul class="list mbr-fonts-style display-4">
+            <li class="mbr-text item-wrap">Dnipro, Dnipropetrovsk Oblast, 49000, UA</li>
+            <li class="mbr-text item-wrap"><br></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-7"><strong>Contacts</strong></h5>
+          <ul class="list mbr-fonts-style display-4">
+            <li class="mbr-text item-wrap">Email:</li>
+            <li class="mbr-text item-wrap"><a href="mailto:support@kranus.com" style="color:#bbbbbb; text-decoration:none;">support@kranus.com</a> <span class="email-label">— Product Support</span></li>
+            <li class="mbr-text item-wrap"><a href="mailto:contact@kranus.com" style="color:#bbbbbb; text-decoration:none;">contact@kranus.com</a> <span class="email-label">— General Inquiries</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Card ai. All rights reserved. &nbsp;|&nbsp; <a href="https://kranus.com/card/policy" target="_blank">Privacy Policy</a> &nbsp;|&nbsp; <a href="https://kranus.com/card/tos" target="_blank">Terms of Service</a> &nbsp;|&nbsp; <a href="https://kranus.com/card/support" target="_blank">Feedback</a></p>
+      </div>
     </div>
   </footer>
 
@@ -225,15 +504,110 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Card ai",
-    "url": "https://kranus.com/card",
-    "logo": "https://kranus.com/card/imgs/image_header_slide.jpg",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "cstmsp@outlook.com",
-      "contactType": "customer service"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://kranus.com/card#organization",
+        "name": "Card ai",
+        "url": "https://kranus.com/card",
+        "logo": "https://kranus.com/card/imgs/main_logo2.svg",
+        "image": "https://kranus.com/card/imgs/image_header_slide.jpg",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "email": "support@kranus.com",
+            "contactType": "customer support"
+          },
+          {
+            "@type": "ContactPoint",
+            "email": "contact@kranus.com",
+            "contactType": "customer service"
+          }
+        ]
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://kranus.com/card#app",
+        "name": "Card AI — Vocabulary Notebook with AI | Learn Languages Faster",
+        "description": "Card AI — flashcards app & vocabulary builder with spaced repetition and AI. Create custom collections, generate AI flashcards, learn languages faster offline.",
+        "applicationCategory": "EducationApplication",
+        "operatingSystem": "iOS, Android",
+        "isAccessibleForFree": true,
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "category": "Free",
+          "description": "Free download — includes subscription via in-app purchase"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Subscriptions",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Premium Subscription",
+              "description": "Subscription unlocks premium features, unlimited AI-generated flashcards and advanced learning tools",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "category": "subscription"
+            }
+          ]
+        },
+        "author": {
+          "@id": "https://kranus.com/card#organization"
+        },
+        "publisher": {
+          "@id": "https://kranus.com/card#organization"
+        },
+        "image": "https://kranus.com/card/imgs/image_header_slide.jpg",
+        "url": "https://kranus.com/card",
+        "sameAs": [
+          "https://apps.apple.com/app/id6743166876",
+          "https://play.google.com/store/apps/details?id=com.vocabulary.flashcards"
+        ],
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://kranus.com/card#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Card AI flashcards app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Card AI is a vocabulary builder and flashcards app with AI generation and spaced repetition to help you memorize words, phrases and languages faster."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does spaced repetition work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Smart repetition schedules reviews right before you forget — increasing intervals for memorized cards and shortening them for difficult words, maximizing retention."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I create my own vocabulary notebooks?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes — create custom collections, import/export via Excel, share with friends and generate AI flashcards from any text or topic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the app work offline?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, learn anywhere offline. Your vocabulary notebooks, audio playback and statistics are available without internet."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </body>

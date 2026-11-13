@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="ru" class="lang-ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkladOk — мобильный складской учёт для малого бизнеса</title>
+  <meta name="description" content="SkladOk — мобильный складской учёт для малого бизнеса. Сканируйте штрихкоды, оформляйте приход, расход, инвентаризацию и переоценку в iPhone. Без Excel.">
+  <meta name="author" content="SkladOk">
+  <meta name="theme-color" content="#F6F8F4">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://kranus.com/SkladOk/ru/">
+  <link rel="alternate" hreflang="uk" href="https://kranus.com/SkladOk/uk/">
+  <link rel="alternate" hreflang="en" href="https://kranus.com/SkladOk/">
+  <link rel="alternate" hreflang="ru" href="https://kranus.com/SkladOk/ru/">
+  <link rel="alternate" hreflang="es" href="https://kranus.com/SkladOk/es/">
+  <link rel="alternate" hreflang="x-default" href="https://kranus.com/SkladOk/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="uk_UA">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:site_name" content="SkladOk">
+  <meta property="og:title" content="SkladOk — меньше таблиц. Больше порядка.">
+  <meta property="og:description" content="Приход, расход, инвентаризация и переоценка в одном iPhone. Сканируйте штрихкоды и видьте реальные остатки.">
+  <meta property="og:url" content="https://kranus.com/SkladOk/ru/">
+  <meta property="og:image" content="https://kranus.com/SkladOk/assets/brand/og-image-ru.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SkladOk — мобильный складской учёт для iPhone">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SkladOk — меньше таблиц. Больше порядка.">
+  <meta name="twitter:description" content="Приход, расход, инвентаризация и переоценка в одном iPhone. Сканируйте штрихкоды и видьте реальные остатки.">
+  <meta name="twitter:image" content="https://kranus.com/SkladOk/assets/brand/og-image-ru.png">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/brand/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/brand/apple-touch-icon.png">
+
+  <link rel="preload" href="../assets/fonts/inter-tight-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-tight-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/screens/ru/receipt-540.avif?v=20261113" as="image" type="image/avif" imagesrcset="../assets/screens/ru/receipt-540.avif?v=20261113 540w, ../assets/screens/ru/receipt-720.avif?v=20261113 720w, ../assets/screens/ru/receipt.avif?v=20261113 1080w" imagesizes="(max-width: 559px) 220px, (max-width: 979px) 220px, 260px">
+  <link rel="preload" href="../assets/screens/ru/items-540.avif?v=20261113" as="image" type="image/avif" imagesrcset="../assets/screens/ru/items-540.avif?v=20261113 540w, ../assets/screens/ru/items-720.avif?v=20261113 720w, ../assets/screens/ru/items.avif?v=20261113 1080w" imagesizes="(max-width: 559px) 220px, (max-width: 979px) 220px, 260px">
+  <link rel="stylesheet" href="../styles.css?v=20261114c">
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript><style>.reveal,.hero__copy>*,.hero__stage,.phone-pos .phone{opacity:1!important;transform:none!important;animation:none!important}</style></noscript>
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SkladOk",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "iOS 18.6 или новее",
+  "inLanguage": "ru",
+  "description": "Мобильный складской учёт для малого бизнеса: сканирование штрихкодов, приход, расход, инвентаризация, переоценка, контроль остатков и цен.",
+  "url": "https://kranus.com/SkladOk/ru/",
+  "image": "https://kranus.com/SkladOk/assets/brand/app-icon.png",
+  "screenshot": [
+    "https://kranus.com/SkladOk/assets/screens/ru/receipt.png",
+    "https://kranus.com/SkladOk/assets/screens/ru/receipts.png",
+    "https://kranus.com/SkladOk/assets/screens/ru/stock.png",
+    "https://kranus.com/SkladOk/assets/screens/ru/stock-item.png",
+    "https://kranus.com/SkladOk/assets/screens/ru/revaluation-recognized.png"
+  ],
+  "featureList": [
+    "Сканирование штрихкодов камерой iPhone",
+    "Ручной ввод штрихкода",
+    "Приход, расход, инвентаризация и переоценка",
+    "Статусы, комментарии и цветные метки документов",
+    "Контроль количества, цены и стоимости остатка",
+    "Открытая база штрихкодов и собственный CSV",
+    "Поиск по названию и штрихкоду",
+    "Цены в USD ($)"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "SkladOk",
+    "serviceType": "Mobile inventory management application",
+    "termsOfService": "https://kranus.com/SkladOk/terms.html",
+    "provider": {
+      "@type": "Organization",
+      "name": "SkladOk",
+      "url": "https://kranus.com/SkladOk/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- Icon sprite -->
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+    </symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M13 6l6 6-6 6"/>
+    </symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 5v14M6 13l6 6 6-6"/>
+    </symbol>
+    <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M11 18l-6-6 6-6"/>
+    </symbol>
+    <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 6l6 6-6 6"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 6L9 17l-5-5"/>
+    </symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 9V5a1 1 0 011-1h4M20 9V5a1 1 0 00-1-1h-4M4 15v4a1 1 0 001 1h4M20 15v4a1 1 0 01-1 1h-4M7 12h10"/>
+    </symbol>
+    <symbol id="i-document" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6"/>
+    </symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8"/>
+    </symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.6 13.6L12 22l-9-9V3h10l7.6 7.6a2 2 0 010 3z"/>
+      <circle cx="7.5" cy="7.5" r="1.2"/>
+    </symbol>
+    <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="7"/>
+      <path d="M20 20l-4-4"/>
+    </symbol>
+    <symbol id="i-currency" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M12 7v10M9.5 9.5h4a2 2 0 010 4h-4M9.5 13.5h4.5"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="7" y="2" width="10" height="20" rx="2"/>
+      <path d="M11 18h2"/>
+    </symbol>
+    <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 9l2-5h14l2 5M3 9v11h18V9M3 9h18M8 20v-6h8v6"/>
+    </symbol>
+    <symbol id="i-cup" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 8h12v6a5 5 0 01-5 5H9a5 5 0 01-5-5V8zM16 9h2a3 3 0 010 6h-2M6 3v2M10 3v2M14 3v2"/>
+    </symbol>
+    <symbol id="i-warehouse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 21V8l9-4 9 4v13M7 21v-8h10v8M7 17h10"/>
+    </symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 7h16l-1.5 13h-13L4 7zM8 7a4 4 0 018 0"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2"/>
+      <path d="M3 7l9 6 9-6"/>
+    </symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z"/>
+      <path d="M9 12l2 2 4-4"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3v12M7 10l5 5 5-5M5 21h14"/>
+    </symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="12" cy="5" rx="8" ry="3"/>
+      <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/>
+    </symbol>
+    <symbol id="i-barcode" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+      <path d="M4 6v12M7 6v12M10 6v8M13 6v12M16 6v8M19 6v12"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="SkladOk — наверх">
+        <img class="brand__mark" src="../assets/brand/logo-badge.svg" alt="" width="38" height="38">
+        <span class="brand__name">SkladOk</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="#features">Возможности</a>
+        <a class="nav__link" href="#screens">Экраны</a>
+        <a class="nav__link" href="#how">Как работает</a>
+        <a class="nav__link" href="#use-cases">Для кого</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <div class="lang-switch" role="group" aria-label="Язык">
+          <a href="../uk/" hreflang="uk" lang="uk">UA</a>
+          <a href="../" hreflang="en" lang="en">EN</a>
+          <span aria-current="page" lang="ru">RU</span>
+          <a href="../es/" hreflang="es" lang="es">ES</a>
+        </div>
+        <a class="appstore-button appstore-button--small appstore-button--dark" href="https://apps.apple.com/app/id6834417596" data-app-store-link>
+          <svg class="appstore-button__icon" aria-hidden="true"><use href="#i-apple"/></svg>
+          <span class="appstore-button__text">
+            <span class="appstore-button__small">Загрузить в</span>
+            <span class="appstore-button__large">Загрузить</span>
+          </span>
+          <span class="sr-only">SkladOk в App Store</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню" data-menu-toggle data-menu-label-open="Открыть меню" data-menu-label-close="Закрыть меню">
+          <span class="nav-toggle__lines" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-menu aria-hidden="true">
+    <div class="container mobile-menu__inner">
+      <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+        <a href="#features"><span>01</span>Возможности</a>
+        <a href="#screens"><span>02</span>Экраны</a>
+        <a href="#how"><span>03</span>Как работает</a>
+        <a href="#use-cases"><span>04</span>Для кого</a>
+        <a href="#full-version"><span>05</span>Полная версия</a>
+      </nav>
+      <div class="mobile-menu__footer">
+        <a class="appstore-button appstore-button--dark" href="https://apps.apple.com/app/id6834417596" data-app-store-link>
+          <svg class="appstore-button__icon" aria-hidden="true"><use href="#i-apple"/></svg>
+          <span class="appstore-button__text">
+            <span class="appstore-button__small">Загрузить в</span>
+            <span class="appstore-button__large">App Store</span>
+          </span>
+        </a>
+        <a class="mobile-menu__mail" href="mailto:support@kranus.com">support@kranus.com</a>
+        <p>iOS 18.6+ · USD ($)</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow hero__eyebrow"><span class="eyebrow__barcode" aria-hidden="true"></span>Мобильный складской учёт для малого бизнеса</p>
+            <h1 class="hero__title" id="hero-title">
+              <span class="hero__title-line">Меньше таблиц.</span>
+              <span class="hero__title-line">Больше <span class="hero__accent">порядка.</span></span>
+            </h1>
+            <p class="hero__lead">SkladOk объединяет приход, расход, инвентаризацию и переоценку в одном iPhone. Сканируйте штрихкоды, создавайте документы и видьте реальные остатки — без Excel и бумажных накладных.</p>
+            <div class="hero__actions">
+              <a class="appstore-button appstore-button--dark" href="https://apps.apple.com/app/id6834417596" data-app-store-link>
+                <svg class="appstore-button__icon" aria-hidden="true"><use href="#i-apple"/></svg>
+                <span class="appstore-button__text">
+                  <span class="appstore-button__small">Загрузить в</span>
+                  <span class="appstore-button__large">App Store</span>
+                </span>
+              </a>
+              <a class="text-link" href="#features">Посмотреть возможности <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+            </div>
+            <p class="hero__meta"><span>iOS 18.6+</span><span>USD ($)</span></p>
+          </div>
+
+          <div class="hero__stage" data-hero-stage>
+            <div class="hero__stage-card" aria-hidden="true"></div>
+            <div class="hero__glow" aria-hidden="true"></div>
+
+            <div class="phone-pos phone-pos--rear" aria-hidden="true">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/items-540.avif?v=20261113 540w, ../assets/screens/ru/items-720.avif?v=20261113 720w, ../assets/screens/ru/items.avif?v=20261113 1080w" sizes="(max-width: 559px) 220px, (max-width: 979px) 220px, 260px">
+                    <source type="image/webp" srcset="../assets/screens/ru/items-540.webp?v=20261113 540w, ../assets/screens/ru/items-720.webp?v=20261113 720w, ../assets/screens/ru/items.webp?v=20261113 1080w" sizes="(max-width: 559px) 220px, (max-width: 979px) 220px, 260px">
+                    <img src="../assets/screens/ru/items-540.png?v=20261113" srcset="../assets/screens/ru/items-540.png?v=20261113 540w, ../assets/screens/ru/items-720.png?v=20261113 720w, ../assets/screens/ru/items.png?v=20261113 1080w" sizes="(max-width: 559px) 220px, (max-width: 979px) 220px, 260px" alt="" width="540" height="1212" fetchpriority="high" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="phone-pos phone-pos--front">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/receipt-540.avif?v=20261113 540w, ../assets/screens/ru/receipt-720.avif?v=20261113 720w, ../assets/screens/ru/receipt.avif?v=20261113 1080w" sizes="(max-width: 559px) 220px, (max-width: 979px) 220px, 260px">
+                    <source type="image/webp" srcset="../assets/screens/ru/receipt-540.webp?v=20261113 540w, ../assets/screens/ru/receipt-720.webp?v=20261113 720w, ../assets/screens/ru/receipt.webp?v=20261113 1080w" sizes="(max-width: 559px) 220px, (max-width: 979px) 220px, 260px">
+                    <img src="../assets/screens/ru/receipt-540.png?v=20261113" srcset="../assets/screens/ru/receipt-540.png?v=20261113 540w, ../assets/screens/ru/receipt-720.png?v=20261113 720w, ../assets/screens/ru/receipt.png?v=20261113 1080w" sizes="(max-width: 559px) 220px, (max-width: 979px) 220px, 260px" alt="Экран прихода в SkladOk со списком товаров и количеством" width="540" height="1212" fetchpriority="high" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="float-card float-card--doc" aria-hidden="true">
+              <span class="float-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-document"/></svg></span>
+              <span class="float-card__text">
+                <span class="float-card__label">Приход</span>
+                <span class="float-card__value">22</span>
+              </span>
+            </div>
+
+            <div class="float-card float-card--stock" aria-hidden="true">
+              <span class="float-card__icon float-card__icon--mint"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg></span>
+              <span class="float-card__text">
+                <span class="float-card__label">В наличии</span>
+                <span class="float-card__value">73 шт.</span>
+                <span class="float-card__sub">Тунец 185 г</span>
+              </span>
+            </div>
+
+            <div class="hero__barcode" aria-hidden="true">
+              <span>Скан</span><span>Запись</span><span>Проверка</span>
+            </div>
+          </div>
+        </div>
+
+        <ul class="hero__ledger" aria-label="Четыре раздела SkladOk">
+          <li class="ledger-item">
+            <span class="ledger-item__index">01</span>
+            <span class="ledger-item__title">Документы</span>
+            <span class="ledger-item__text">Приход, расход, инвентаризация, переоценка.</span>
+          </li>
+          <li class="ledger-item">
+            <span class="ledger-item__index">02</span>
+            <span class="ledger-item__title">Склад</span>
+            <span class="ledger-item__text">Остатки, количество и стоимость.</span>
+          </li>
+          <li class="ledger-item">
+            <span class="ledger-item__index">03</span>
+            <span class="ledger-item__title">Номенклатура</span>
+            <span class="ledger-item__text">Товары, штрихкоды и цены.</span>
+          </li>
+          <li class="ledger-item">
+            <span class="ledger-item__index">04</span>
+            <span class="ledger-item__title">Профиль</span>
+            <span class="ledger-item__text">Валюта, источник данных, подписка.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section class="section intro" id="philosophy" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <p class="section-label"><span>01</span> Философия</p>
+          <div class="section-head__body">
+            <h2 id="intro-title">Учёт, который не мешает бизнесу.</h2>
+            <p class="section-head__lead">SkladOk создан для небольших команд, где время важнее сложной настройки. Четыре понятных раздела, один рабочий процесс и никаких лишних шагов.</p>
+          </div>
+        </div>
+
+        <div class="intro__statement reveal">
+          <p>Сканировано. Записано. Проверено.</p>
+          <span>Один процесс вместо десяти вкладок</span>
+        </div>
+
+        <ul class="tabs-grid reveal" aria-label="Разделы приложения">
+          <li class="tab-card">
+            <span class="tab-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-document"/></svg></span>
+            <span class="tab-card__index">01</span>
+            <h3>Документы</h3>
+            <p>Приход, расход, инвентаризация и переоценка в одном списке.</p>
+          </li>
+          <li class="tab-card">
+            <span class="tab-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-box"/></svg></span>
+            <span class="tab-card__index">02</span>
+            <h3>Склад</h3>
+            <p>Остатки, количество и стоимость — без отдельных таблиц.</p>
+          </li>
+          <li class="tab-card">
+            <span class="tab-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-barcode"/></svg></span>
+            <span class="tab-card__index">03</span>
+            <h3>Номенклатура</h3>
+            <p>Каталог товаров с названиями, штрихкодами и ценами.</p>
+          </li>
+          <li class="tab-card">
+            <span class="tab-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+            <span class="tab-card__index">04</span>
+            <h3>Профиль</h3>
+            <p>Валюта, источник данных, подписка и поддержка.</p>
+          </li>
+        </ul>
+
+        <p class="intro__note reveal"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Данные учёта хранятся локально на вашем iPhone.</p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <p class="section-label"><span>02</span> Возможности</p>
+          <div class="section-head__body">
+            <h2 id="features-title">Всё, что нужно для порядка на складе.</h2>
+            <p class="section-head__lead">Без десятков модулей и сложных меню. Только то, что вы делаете каждый день.</p>
+          </div>
+        </div>
+
+        <article class="feature reveal">
+          <div class="feature__copy">
+            <p class="feature__index">01 · Сканирование</p>
+            <h3 class="feature__title">Одно сканирование — и товар в документе.</h3>
+            <p class="feature__body">Камера iPhone считывает штрихкод, а SkladOk подставляет название и цену из вашего каталога. Если код повреждён или отсутствует на этикетке, введите его вручную.</p>
+            <ul class="feature__list">
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Сканирование камерой</li>
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Ручной ввод штрихкода</li>
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Поиск по названию или штрихкоду</li>
+            </ul>
+          </div>
+          <div class="feature__visual feature__visual--scanner" data-number="01">
+            <div class="phone">
+              <div class="phone__screen">
+                <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/scanner-empty-540.avif?v=20261113 540w, ../assets/screens/ru/scanner-empty-720.avif?v=20261113 720w, ../assets/screens/ru/scanner-empty.avif?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px">
+                    <source type="image/webp" srcset="../assets/screens/ru/scanner-empty-540.webp?v=20261113 540w, ../assets/screens/ru/scanner-empty-720.webp?v=20261113 720w, ../assets/screens/ru/scanner-empty.webp?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px">
+                    <img src="../assets/screens/ru/scanner-empty-540.png?v=20261113" srcset="../assets/screens/ru/scanner-empty-540.png?v=20261113 540w, ../assets/screens/ru/scanner-empty-720.png?v=20261113 720w, ../assets/screens/ru/scanner-empty.png?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px" alt="Экран сканирования штрихкода в SkladOk" width="540" height="1212" decoding="async">
+                  </picture>
+                <span class="phone__island"></span>
+                <span class="phone__glare"></span>
+              </div>
+            </div>
+            <span class="visual-chip visual-chip--bottom" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Ввести вручную</span>
+          </div>
+        </article>
+
+        <article class="feature feature--reverse reveal">
+          <div class="feature__copy">
+            <p class="feature__index">02 · Документы</p>
+            <h3 class="feature__title">Приход, расход, инвентаризация, переоценка.</h3>
+            <p class="feature__body">Все складские операции в одном месте. Черновики, статусы, комментарии и цветные метки помогают не потерять важное.</p>
+            <ul class="feature__list">
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Четыре типа документов</li>
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Статусы: черновик, отложен, завершён</li>
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Комментарии и цветные метки</li>
+            </ul>
+          </div>
+          <div class="feature__visual feature__visual--docs" data-number="02">
+            <div class="tag-stack" aria-hidden="true">
+              <span class="tag-pill tag-pill--green">Отгрузка клиенту</span>
+              <span class="tag-pill tag-pill--amber">Безналичная оплата</span>
+            </div>
+            <div class="phone">
+              <div class="phone__screen">
+                <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/receipt-540.avif?v=20261113 540w, ../assets/screens/ru/receipt-720.avif?v=20261113 720w, ../assets/screens/ru/receipt.avif?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px">
+                    <source type="image/webp" srcset="../assets/screens/ru/receipt-540.webp?v=20261113 540w, ../assets/screens/ru/receipt-720.webp?v=20261113 720w, ../assets/screens/ru/receipt.webp?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px">
+                    <img src="../assets/screens/ru/receipt-540.png?v=20261113" srcset="../assets/screens/ru/receipt-540.png?v=20261113 540w, ../assets/screens/ru/receipt-720.png?v=20261113 720w, ../assets/screens/ru/receipt.png?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px" alt="Экран прихода в SkladOk со статусом и списком товаров" width="540" height="1212" decoding="async">
+                  </picture>
+                <span class="phone__island"></span>
+                <span class="phone__glare"></span>
+              </div>
+            </div>
+            <span class="status-chip" aria-hidden="true"><span class="status-chip__dot"></span>Завершён</span>
+            <span class="visual-chip visual-chip--bottom" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-document"/></svg>Приход • 22</span>
+          </div>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__copy">
+            <p class="feature__index">03 · Склад</p>
+            <h3 class="feature__title">Цифры, которые сходятся.</h3>
+            <p class="feature__body">Количество, цена за единицу и общая стоимость на одном экране. Переоценка показывает, как именно изменилась стоимость остатка.</p>
+            <ul class="feature__list">
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Остаток по каждому товару</li>
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Стоимость до и после переоценки</li>
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Стоимость меняется без изменения количества</li>
+            </ul>
+          </div>
+          <div class="feature__visual feature__visual--stock" data-number="03">
+            <div class="stock-card" aria-hidden="true">
+              <span class="stock-card__name">Тунец 185 г</span>
+              <span class="stock-card__row"><span>В наличии</span><strong>73 шт.</strong></span>
+              <span class="stock-card__row"><span>Новая цена</span><strong>14 $</strong></span>
+              <span class="stock-card__delta">+$182 к стоимости</span>
+            </div>
+            <div class="phone">
+              <div class="phone__screen">
+                <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/revaluation-540.avif?v=20261113 540w, ../assets/screens/ru/revaluation-720.avif?v=20261113 720w, ../assets/screens/ru/revaluation.avif?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px">
+                    <source type="image/webp" srcset="../assets/screens/ru/revaluation-540.webp?v=20261113 540w, ../assets/screens/ru/revaluation-720.webp?v=20261113 720w, ../assets/screens/ru/revaluation.webp?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px">
+                    <img src="../assets/screens/ru/revaluation-540.png?v=20261113" srcset="../assets/screens/ru/revaluation-540.png?v=20261113 540w, ../assets/screens/ru/revaluation-720.png?v=20261113 720w, ../assets/screens/ru/revaluation.png?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px" alt="Экран переоценки в SkladOk со старой и новой ценой" width="540" height="1212" decoding="async">
+                  </picture>
+                <span class="phone__island"></span>
+                <span class="phone__glare"></span>
+              </div>
+            </div>
+            <span class="visual-chip visual-chip--bottom" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-currency"/></svg>Стоимость до / после</span>
+          </div>
+        </article>
+
+        <article class="feature feature--reverse reveal">
+          <div class="feature__copy">
+            <p class="feature__index">04 · Каталог</p>
+            <h3 class="feature__title">Ваш ассортимент. Без ручного ввода.</h3>
+            <p class="feature__body">Подключите открытую базу штрихкодов или загрузите собственный CSV. Ищите по названию или штрихкоду, держите цены и остатки под рукой.</p>
+            <ul class="feature__list">
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Открытая база штрихкодов</li>
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Свой CSV по ссылке или файлом</li>
+              <li><span class="feature__check"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Поиск по названию или коду</li>
+            </ul>
+          </div>
+          <div class="feature__visual feature__visual--catalog" data-number="04">
+            <div class="source-card" aria-hidden="true">
+              <span class="source-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span>
+              <span class="source-card__text">
+                <strong>Открытая база данных</strong>
+                <span>Подключено</span>
+              </span>
+              <span class="source-card__badge">По умолчанию</span>
+            </div>
+            <div class="phone">
+              <div class="phone__screen">
+                <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/items-540.avif?v=20261113 540w, ../assets/screens/ru/items-720.avif?v=20261113 720w, ../assets/screens/ru/items.avif?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px">
+                    <source type="image/webp" srcset="../assets/screens/ru/items-540.webp?v=20261113 540w, ../assets/screens/ru/items-720.webp?v=20261113 720w, ../assets/screens/ru/items.webp?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px">
+                    <img src="../assets/screens/ru/items-540.png?v=20261113" srcset="../assets/screens/ru/items-540.png?v=20261113 540w, ../assets/screens/ru/items-720.png?v=20261113 720w, ../assets/screens/ru/items.png?v=20261113 1080w" sizes="(max-width: 559px) 190px, (max-width: 979px) 220px, 280px" alt="Экран каталога товаров в SkladOk с поиском и ценами" width="540" height="1212" decoding="async">
+                  </picture>
+                <span class="phone__island"></span>
+                <span class="phone__glare"></span>
+              </div>
+            </div>
+            <span class="visual-chip visual-chip--bottom" aria-hidden="true"><svg class="icon" aria-hidden="true"><use href="#i-barcode"/></svg>CSV: barcode; name; price</span>
+          </div>
+        </article>
+
+        <div class="details reveal">
+          <article class="detail-card">
+            <span class="detail-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-tag"/></svg></span>
+            <h3>Метки и комментарии</h3>
+            <p>Цветные метки и комментарии к документам, чтобы ничего важного не потерялось.</p>
+          </article>
+          <article class="detail-card">
+            <span class="detail-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span>
+            <h3>Поиск</h3>
+            <p>Найдите нужный товар за секунды по названию или штрихкоду.</p>
+          </article>
+          <article class="detail-card">
+            <span class="detail-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-currency"/></svg></span>
+            <h3>Валюты</h3>
+            <p>В этой версии цены указаны в USD ($). Другие валюты доступны в профиле приложения.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screens gallery -->
+    <section class="section screens" id="screens" aria-labelledby="screens-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <p class="section-label section-label--light"><span>03</span> Экраны</p>
+          <div class="section-head__body">
+            <h2 id="screens-title">Загляните внутрь.</h2>
+            <p class="section-head__lead">Те же экраны, которые вы увидите после запуска. Без рендеров и выдуманных интерфейсов.</p>
+            <p class="screens__meta">Реальные экраны приложения</p>
+          </div>
+        </div>
+
+        <div class="gallery" data-gallery>
+          <div class="gallery__top">
+            <p class="gallery__counter" aria-live="polite"><strong data-gallery-current>01</strong> / <span data-gallery-total>09</span></p>
+            <div class="gallery__arrows">
+              <button class="gallery__arrow" type="button" aria-label="Предыдущий экран" aria-controls="screens-gallery" data-gallery-prev>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg>
+              </button>
+              <button class="gallery__arrow" type="button" aria-label="Следующий экран" aria-controls="screens-gallery" data-gallery-next>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="gallery__viewport" id="screens-gallery" tabindex="0" role="region" aria-roledescription="карусель" aria-label="Экраны SkladOk. Используйте стрелки влево и вправо." data-gallery-viewport data-slide-of="из">
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="1 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/receipt-540.avif?v=20261113 540w, ../assets/screens/ru/receipt-720.avif?v=20261113 720w, ../assets/screens/ru/receipt.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/receipt-540.webp?v=20261113 540w, ../assets/screens/ru/receipt-720.webp?v=20261113 720w, ../assets/screens/ru/receipt.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/receipt-540.png?v=20261113" srcset="../assets/screens/ru/receipt-540.png?v=20261113 540w, ../assets/screens/ru/receipt-720.png?v=20261113 720w, ../assets/screens/ru/receipt.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран прихода в SkladOk" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">01</span>
+                <h3>Приход</h3>
+                <p>От первого сканирования до завершённого документа.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="2 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/receipts-540.avif?v=20261113 540w, ../assets/screens/ru/receipts-720.avif?v=20261113 720w, ../assets/screens/ru/receipts.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/receipts-540.webp?v=20261113 540w, ../assets/screens/ru/receipts-720.webp?v=20261113 720w, ../assets/screens/ru/receipts.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/receipts-540.png?v=20261113" srcset="../assets/screens/ru/receipts-540.png?v=20261113 540w, ../assets/screens/ru/receipts-720.png?v=20261113 720w, ../assets/screens/ru/receipts.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран приходов в SkladOk со списком документов" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">02</span>
+                <h3>Приходы</h3>
+                <p>Все приходы со статусами и метками.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="3 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/stock-540.avif?v=20261113 540w, ../assets/screens/ru/stock-720.avif?v=20261113 720w, ../assets/screens/ru/stock.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/stock-540.webp?v=20261113 540w, ../assets/screens/ru/stock-720.webp?v=20261113 720w, ../assets/screens/ru/stock.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/stock-540.png?v=20261113" srcset="../assets/screens/ru/stock-540.png?v=20261113 540w, ../assets/screens/ru/stock-720.png?v=20261113 720w, ../assets/screens/ru/stock.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран склада в SkladOk с остатками" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">03</span>
+                <h3>Склад</h3>
+                <p>Остатки, количество и стоимость на одном экране.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="4 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/stock-item-540.avif?v=20261113 540w, ../assets/screens/ru/stock-item-720.avif?v=20261113 720w, ../assets/screens/ru/stock-item.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/stock-item-540.webp?v=20261113 540w, ../assets/screens/ru/stock-item-720.webp?v=20261113 720w, ../assets/screens/ru/stock-item.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/stock-item-540.png?v=20261113" srcset="../assets/screens/ru/stock-item-540.png?v=20261113 540w, ../assets/screens/ru/stock-item-720.png?v=20261113 720w, ../assets/screens/ru/stock-item.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран редактирования товара в SkladOk" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">04</span>
+                <h3>Товар</h3>
+                <p>Редактирование товара: название, количество, штрихкод и цена.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="5 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/revaluation-recognized-540.avif?v=20261113 540w, ../assets/screens/ru/revaluation-recognized-720.avif?v=20261113 720w, ../assets/screens/ru/revaluation-recognized.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/revaluation-recognized-540.webp?v=20261113 540w, ../assets/screens/ru/revaluation-recognized-720.webp?v=20261113 720w, ../assets/screens/ru/revaluation-recognized.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/revaluation-recognized-540.png?v=20261113" srcset="../assets/screens/ru/revaluation-recognized-540.png?v=20261113 540w, ../assets/screens/ru/revaluation-recognized-720.png?v=20261113 720w, ../assets/screens/ru/revaluation-recognized.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран сканирования товара для переоценки в SkladOk" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">05</span>
+                <h3>Товар распознан</h3>
+                <p>Сканирование для переоценки: новая цена и остаток.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="6 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/revaluation-540.avif?v=20261113 540w, ../assets/screens/ru/revaluation-720.avif?v=20261113 720w, ../assets/screens/ru/revaluation.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/revaluation-540.webp?v=20261113 540w, ../assets/screens/ru/revaluation-720.webp?v=20261113 720w, ../assets/screens/ru/revaluation.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/revaluation-540.png?v=20261113" srcset="../assets/screens/ru/revaluation-540.png?v=20261113 540w, ../assets/screens/ru/revaluation-720.png?v=20261113 720w, ../assets/screens/ru/revaluation.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран переоценки в SkladOk" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">06</span>
+                <h3>Переоценка</h3>
+                <p>Старая и новая цена, а также изменение стоимости остатка.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="7 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/items-540.avif?v=20261113 540w, ../assets/screens/ru/items-720.avif?v=20261113 720w, ../assets/screens/ru/items.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/items-540.webp?v=20261113 540w, ../assets/screens/ru/items-720.webp?v=20261113 720w, ../assets/screens/ru/items.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/items-540.png?v=20261113" srcset="../assets/screens/ru/items-540.png?v=20261113 540w, ../assets/screens/ru/items-720.png?v=20261113 720w, ../assets/screens/ru/items.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран номенклатуры в SkladOk" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">07</span>
+                <h3>Номенклатура</h3>
+                <p>Поиск, цены и остатки в одном списке.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="8 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/data-source-540.avif?v=20261113 540w, ../assets/screens/ru/data-source-720.avif?v=20261113 720w, ../assets/screens/ru/data-source.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/data-source-540.webp?v=20261113 540w, ../assets/screens/ru/data-source-720.webp?v=20261113 720w, ../assets/screens/ru/data-source.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/data-source-540.png?v=20261113" srcset="../assets/screens/ru/data-source-540.png?v=20261113 540w, ../assets/screens/ru/data-source-720.png?v=20261113 720w, ../assets/screens/ru/data-source.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран источника данных в SkladOk" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">08</span>
+                <h3>Источник данных</h3>
+                <p>Открытая база или собственный CSV.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="gallery__slide" aria-roledescription="slide" aria-label="9 of 9">
+              <div class="phone">
+                <div class="phone__screen">
+                  <picture>
+                    <source type="image/avif" srcset="../assets/screens/ru/tags-540.avif?v=20261113 540w, ../assets/screens/ru/tags-720.avif?v=20261113 720w, ../assets/screens/ru/tags.avif?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <source type="image/webp" srcset="../assets/screens/ru/tags-540.webp?v=20261113 540w, ../assets/screens/ru/tags-720.webp?v=20261113 720w, ../assets/screens/ru/tags.webp?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px">
+                    <img loading="lazy" src="../assets/screens/ru/tags-540.png?v=20261113" srcset="../assets/screens/ru/tags-540.png?v=20261113 540w, ../assets/screens/ru/tags-720.png?v=20261113 720w, ../assets/screens/ru/tags.png?v=20261113 1080w" sizes="(max-width: 559px) 260px, (max-width: 979px) 240px, 320px" alt="Экран меток в SkladOk" width="540" height="1212" decoding="async">
+                  </picture>
+                  <span class="phone__island"></span>
+                  <span class="phone__glare"></span>
+                </div>
+              </div>
+              <figcaption>
+                <span class="gallery__index">09</span>
+                <h3>Метки</h3>
+                <p>Цветные метки для порядка в документах.</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="gallery__dots" role="group" aria-label="Навигация по галерее">
+            <button class="gallery__dot" type="button" aria-label="Показать экран 1: Приход" aria-current="true" data-gallery-dot="0"><span></span></button>
+            <button class="gallery__dot" type="button" aria-label="Показать экран 2: Приходы" data-gallery-dot="1"><span></span></button>
+            <button class="gallery__dot" type="button" aria-label="Показать экран 3: Склад" data-gallery-dot="2"><span></span></button>
+            <button class="gallery__dot" type="button" aria-label="Показать экран 4: Товар" data-gallery-dot="3"><span></span></button>
+            <button class="gallery__dot" type="button" aria-label="Показать экран 5: Товар распознан" data-gallery-dot="4"><span></span></button>
+            <button class="gallery__dot" type="button" aria-label="Показать экран 6: Переоценка" data-gallery-dot="5"><span></span></button>
+            <button class="gallery__dot" type="button" aria-label="Показать экран 7: Номенклатура" data-gallery-dot="6"><span></span></button>
+            <button class="gallery__dot" type="button" aria-label="Показать экран 8: Источник данных" data-gallery-dot="7"><span></span></button>
+            <button class="gallery__dot" type="button" aria-label="Показать экран 9: Метки" data-gallery-dot="8"><span></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="how__grid">
+          <div class="how__intro reveal">
+            <p class="section-label"><span>04</span> Как работает</p>
+            <h2 id="how-title">Три шага до порядка.</h2>
+            <p>От первого запуска до первого завершённого документа — без инструкции на сорок страниц.</p>
+            <a class="text-link" href="#download">Начать со SkladOk <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+
+          <ol class="steps">
+            <li class="step reveal">
+              <span class="step__number" aria-hidden="true">01</span>
+              <div class="step__content">
+                <p class="step__meta">Шаг 01 · Каталог</p>
+                <h3>Настройте каталог</h3>
+                <p>Подключите открытую базу штрихкодов, загрузите свой CSV или добавьте товары вручную. База по умолчанию загружается при настройке.</p>
+                <div class="ui-card" aria-hidden="true">
+                  <div class="ui-card__top">
+                    <span class="ui-card__title"><span class="ui-dot ui-dot--teal"></span>Открытая база данных</span>
+                    <span class="ui-card__badge">По умолчанию</span>
+                  </div>
+                  <div class="ui-row"><span class="ui-row__label">Статус</span><span class="ui-row__value">Подключено</span></div>
+                  <div class="ui-row"><span class="ui-row__label">Формат CSV</span><span class="ui-row__value">barcode; name; price</span></div>
+                </div>
+              </div>
+            </li>
+
+            <li class="step reveal">
+              <span class="step__number" aria-hidden="true">02</span>
+              <div class="step__content">
+                <p class="step__meta">Шаг 02 · Документ</p>
+                <h3>Сканируйте и записывайте</h3>
+                <p>Выберите тип документа, отсканируйте товар, укажите количество и цену. SkladOk посчитает итоги и сохранит документ со статусом.</p>
+                <div class="ui-card" aria-hidden="true">
+                  <div class="ui-card__top">
+                    <span class="ui-card__title">Приход</span>
+                    <span class="ui-card__badge ui-card__badge--muted">Черновик</span>
+                  </div>
+                  <div class="ui-row"><span class="ui-row__label">Товары</span><span class="ui-row__value">10</span></div>
+                  <div class="ui-row"><span class="ui-row__label">Общая стоимость</span><span class="ui-row__value">120 $</span></div>
+                  <span class="ui-button">Завершить документ</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="step reveal">
+              <span class="step__number" aria-hidden="true">03</span>
+              <div class="step__content">
+                <p class="step__meta">Шаг 03 · Контроль</p>
+                <h3>Держите склад под контролем</h3>
+                <p>Завершите документ и проверьте, как изменились количество и стоимость. История документов всегда под рукой.</p>
+                <div class="ui-card" aria-hidden="true">
+                  <div class="ui-card__top">
+                    <span class="ui-card__title">Переоценка</span>
+                    <span class="ui-card__badge ui-card__badge--muted">Черновик</span>
+                  </div>
+                  <div class="ui-row"><span class="ui-row__label">Стоимость до / после</span><span class="ui-row__value">1 257 $ / 1 439 $</span></div>
+                  <div class="ui-row"><span class="ui-row__label">Изменение стоимости</span><span class="ui-row__value ui-row__value--green">+182 $</span></div>
+                  <div class="ui-row"><span class="ui-row__label">В наличии</span><span class="ui-row__value">73 шт.</span></div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use cases -->
+    <section class="section usecases" id="use-cases" aria-labelledby="usecases-title">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <p class="section-label"><span>05</span> Для кого</p>
+          <div class="section-head__body">
+            <h2 id="usecases-title">Для тех, кто держит всё под контролем.</h2>
+            <p class="section-head__lead">SkladOk создан для небольших команд, где один человек — или несколько — управляют складом без отдельной ERP.</p>
+          </div>
+        </div>
+
+        <div class="case-grid reveal">
+          <article class="case-card case-card--sky" data-number="01">
+            <div class="case-card__top">
+              <span class="case-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-store"/></svg></span>
+              <span class="case-card__tag">Ритейл</span>
+            </div>
+            <div>
+              <h3>Магазин</h3>
+              <p>Быстрый приход, расход и инвентаризация без бумажных блокнотов.</p>
+            </div>
+          </article>
+
+          <article class="case-card case-card--mint" data-number="02">
+            <div class="case-card__top">
+              <span class="case-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-cup"/></svg></span>
+              <span class="case-card__tag">Гостеприимство</span>
+            </div>
+            <div>
+              <h3>Кафе или кухня</h3>
+              <p>Следите за ингредиентами и их расходом, не держа всё в голове.</p>
+            </div>
+          </article>
+
+          <article class="case-card case-card--ink" data-number="03">
+            <div class="case-card__top">
+              <span class="case-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-warehouse"/></svg></span>
+              <span class="case-card__tag">Склад</span>
+            </div>
+            <div>
+              <h3>Небольшой склад</h3>
+              <p>Остатки, переоценка и движение товаров в одном месте.</p>
+            </div>
+          </article>
+
+          <article class="case-card case-card--paper" data-number="04">
+            <div class="case-card__top">
+              <span class="case-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg></span>
+              <span class="case-card__tag">Онлайн-продажи</span>
+            </div>
+            <div>
+              <h3>Маркетплейсы</h3>
+              <p>Добавляйте товары по штрихкоду и будьте уверены в остатках.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="case-banner reveal">
+          <p>Один iPhone. Четыре раздела. Без таблиц.</p>
+          <img src="../assets/brand/barcode.svg" alt="" width="260" height="72" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <!-- Full version -->
+    <section class="section full" id="full-version" aria-labelledby="full-title">
+      <div class="container">
+        <div class="full__card reveal">
+          <div class="full__grid">
+            <div class="full__copy">
+              <p class="section-label section-label--light"><span>06</span> Полная версия</p>
+              <h2 id="full-title">Больше свободы для ежедневной работы.</h2>
+              <p>Полная версия даёт больше места для ассортимента и документов. Всё остальное — тот же спокойный SkladOk.</p>
+              <ul class="check-list">
+                <li><span class="check-list__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Своя база штрихкодов товаров</li>
+                <li><span class="check-list__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Неограниченное количество складских документов</li>
+                <li><span class="check-list__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>Неограниченное количество товаров на складе</li>
+              </ul>
+            </div>
+
+            <div class="pricing">
+              <div class="price-card">
+                <div class="price-card__top">
+                  <span class="price-card__period">Ежемесячно</span>
+                  <span class="price-card__unit">/ месяц</span>
+                </div>
+                <p class="price-card__amount">1.99 <span>USD</span></p>
+                <p class="price-card__note">Гибкий старт без долгих обязательств.</p>
+              </div>
+
+              <div class="price-card price-card--featured">
+                <div class="price-card__top">
+                  <span class="price-card__period">Ежегодно</span>
+                  <span class="price-card__badge">15% выгоднее</span>
+                </div>
+                <p class="price-card__amount">19.99 <span>USD</span></p>
+                <p class="price-card__note">1.67 USD в месяц при оплате за год</p>
+              </div>
+
+              <a class="appstore-button appstore-button--light" href="https://apps.apple.com/app/id6834417596" data-app-store-link>
+                <svg class="appstore-button__icon" aria-hidden="true"><use href="#i-apple"/></svg>
+                <span class="appstore-button__text">
+                  <span class="appstore-button__small">Загрузить в</span>
+                  <span class="appstore-button__large">App Store</span>
+                </span>
+              </a>
+              <p class="pricing__note">Цены в App Store могут отличаться по регионам. Подписка продлевается автоматически.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final" id="download" aria-labelledby="final-title">
+      <div class="final__bg" aria-hidden="true"></div>
+      <div class="container final__inner">
+        <img class="final__icon" src="../assets/brand/app-icon.png" alt="Иконка приложения SkladOk" width="96" height="96">
+        <p class="section-label"><span>07</span> Начало</p>
+        <h2 id="final-title">Порядок начинается с одного сканирования.</h2>
+        <p>Загрузите SkladOk и сделайте склад понятным.</p>
+        <a class="appstore-button appstore-button--dark" href="https://apps.apple.com/app/id6834417596" data-app-store-link>
+          <svg class="appstore-button__icon" aria-hidden="true"><use href="#i-apple"/></svg>
+          <span class="appstore-button__text">
+            <span class="appstore-button__small">Загрузить в</span>
+            <span class="appstore-button__large">App Store</span>
+          </span>
+        </a>
+        <p class="final__meta">iOS 18.6+ · USD ($)</p>
+        <div class="final__barcode" aria-hidden="true">
+          <img src="../assets/brand/barcode.svg" alt="" width="420" height="64">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="#top" aria-label="SkladOk — наверх">
+            <img class="brand__mark" src="../assets/brand/logo-badge-light.svg" alt="" width="38" height="38">
+            <span class="brand__name">SkladOk</span>
+          </a>
+          <p>Мобильный складской учёт для малого бизнеса.</p>
+          <a class="footer__mail" href="mailto:support@kranus.com">support@kranus.com</a>
+        </div>
+
+        <nav class="footer__col" aria-label="Продукт">
+          <p class="footer__col-title">Продукт</p>
+          <a href="#philosophy">Философия</a>
+          <a href="#features">Возможности</a>
+          <a href="#screens">Экраны</a>
+          <a href="#how">Как работает</a>
+          <a href="#use-cases">Для кого</a>
+        </nav>
+
+        <nav class="footer__col" aria-label="Правовая информация">
+          <p class="footer__col-title">Правовая информация</p>
+          <a href="../privacy.html" hreflang="en">Политика конфиденциальности</a>
+          <a href="../terms.html" hreflang="en">Условия предоставления услуг</a>
+          <a href="../support.html" hreflang="en">Поддержка</a>
+        </nav>
+
+        <div class="footer__col footer__col--meta">
+          <p class="footer__col-title">Приложение</p>
+          <p>iOS 18.6+</p>
+          <p>USD ($)</p>
+          <p>Полная версия доступна в приложении.</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> SkladOk. Все права защищены.</p>
+        <div class="footer__legal">
+          <a href="../privacy.html" hreflang="en">Политика конфиденциальности</a>
+          <a href="../terms.html" hreflang="en">Условия предоставления услуг</a>
+          <a href="../support.html" hreflang="en">Поддержка</a>
+          <a href="../" hreflang="en" lang="en">English</a>
+          <a href="../uk/" hreflang="uk" lang="uk">Українська</a>
+          <a href="../es/" hreflang="es" lang="es">Español</a>
+        </div>
+      </div>
+
+      <div class="footer__wordmark" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+  <script src="../main.js?v=20261114b" defer></script>
+</body>
+</html>

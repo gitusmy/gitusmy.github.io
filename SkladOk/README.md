@@ -1,8 +1,13 @@
 # SkladOk — landing page
 
-Статичний лендинг для iOS-застосунку **SkladOk** (мобільний складський облік
-для малого бізнесу). Англійська — головна мова, українська — у `/uk/`,
-російська — у `/ru/`, іспанська — у `/es/`. Дизайн «Тихий порядок».
+Статичний лендинг для застосунку **SkladOk** (мобільний складський облік для
+малого бізнесу). Англійська — головна мова, українська — у `/uk/`,
+російська — у `/ru/`, іспанська — у `/es/`.
+
+Застосунок працює на iPhone та iPad, а на Mac з Apple silicon (M1 або новіше)
+запускається як **Designed for iPad**. Окремого Mac Catalyst немає. Тексти
+лендінгу поки що згадують лише iPhone — їх варто оновити на iPhone/iPad
+(і додати Mac, якщо він буде публічно доступний у Mac App Store).
 
 ## Запуск локально
 
@@ -22,18 +27,20 @@ python3 -m http.server 8000
 - `en/index.html` — редирект на головну для старих посилань `/en/`.
 - `privacy.html` — Privacy Policy, лише англійською.
 - `terms.html` — Terms of Service, лише англійською.
-- `support.html` — сторінка підтримки з повноекранною формою Microsoft Forms, лише англійською.
+- `support.html` — сторінка підтримки з повноекранною формою Microsoft Forms,
+  лише англійською.
 - `styles.css` — дизайн-система, адаптивність, анімації, стилі правових сторінок.
 - `main.js` — меню, scroll spy, reveal-анімації, паралакс, галерея.
-- `assets/screens/` — реальні екрани застосунку з українським інтерфейсом
-  в AVIF/WebP/PNG (варіанти 540, 720 і 1080 px для `srcset`).
-- `assets/screens/en/` — ті самі екрани з англійським інтерфейсом для
-  англійської версії лендінгу.
-- `assets/screens/ru/` — екрани з російським інтерфейсом для `/ru/`.
-- `assets/screens/es/` — екрани з іспанським інтерфейсом для `/es/`.
+- `assets/screens/` — екрани з українським інтерфейсом в AVIF/WebP/PNG
+  (варіанти 540, 720 і 1080 px для `srcset`).
+- `assets/screens/en/` — екрани з англійським інтерфейсом.
+- `assets/screens/ru/` — екрани з російським інтерфейсом.
+- `assets/screens/es/` — екрани з іспанським інтерфейсом.
 - `assets/brand/` — іконка, логотипи, favicon, OG-зображення для чотирьох мов.
 - `assets/fonts/` — self-hosted Inter та Inter Tight (WOFF2).
-- `robots.txt`, `sitemap.xml` — для `https://kranus.com/SkladOk/` (EN), `/uk/` (UA), `/ru/` (RU), `/es/` (ES), `support.html`, `privacy.html` і `terms.html`.
+- `robots.txt`, `sitemap.xml` — для `https://kranus.com/SkladOk/` (EN),
+  `/uk/` (UA), `/ru/` (RU), `/es/` (ES), `support.html`, `privacy.html`
+  і `terms.html`.
 
 Мовна версія перемикається кнопками `UA / EN / RU / ES` у хедері. Головна
 сторінка — англійська (`/`), українська — `/uk/`, російська — `/ru/`,
@@ -42,9 +49,7 @@ python3 -m http.server 8000
 через `../`. Українська версія показує українські екрани, англійська —
 англійські, російська — російські, іспанська — іспанські. Українські ціни
 на екранах — у **₴ (UAH)**, англійські, російські та іспанські — у
-**$ (USD)**. Джерела фреймів — `../design/SkladOk.en.fig`,
-`../design/SkladOk.ru.fig` і `../design/SkladOk.es.fig` (копії вихідного
-`SkladOk.fig`).
+**$ (USD)**.
 
 Після заміни будь-якого скріншота оновіть версію `?v=...` біля його URL
 у `index.html`, `uk/index.html`, `ru/index.html` або `es/index.html`
@@ -55,24 +60,26 @@ python3 -m http.server 8000
 
 `support.html` — повноекранний `<iframe>` з формою Microsoft Forms:
 `https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAARnEBc9UMzZaM05WWFQ3M0RFNEZMRzIzTlAwSDNFRy4u`.
-Форма збирає ім'я, тип звернення, текст відгуку, версію застосунку, email
-і згоду. Дані обробляє Microsoft Forms; це розкрито в Privacy Policy.
+
+Форма збирає ім'я, email, тип звернення, текст відгуку, платформу
+(iOS / macOS / Android / None so far) і згоду. Версію застосунку форма не
+збирає. Дані обробляє Microsoft Forms; це розкрито в Privacy Policy.
 
 ## Перед публікацією
 
 1. **App Store.** URL уже вказано як
    `https://apps.apple.com/app/id6834417596` (ID з App Store Connect). У кожній
    мовній версії він зустрічається 5 разів (позначки `data-app-store-link`).
-   Застосунок ще не опубліковано, тому до релізу посилання може показувати
-   сторінку з помилкою; після публікації воно запрацює без змін на сайті.
-2. **Правові сторінки.** `privacy.html` і `terms.html` уже додані та
-   підключені з усіх чотирьох мовних версій. Документи доступні лише
-   англійською; підписи посилань у футері залишаються локалізованими.
-   Перед публікацією перевірте, що дати `Effective` / `Last updated`
-   відповідають даті публікації, а текст описує фактичний стан застосунку
-   (Firebase Analytics, IDFA/ATT, перемикач аналітики). Тексти варто
-   показати юристу, особливо розділи про IDFA/ATT, consent, transfers і
-   нейтральне регулювання спорів.
+   Станом на 24.11.2026 застосунок ще не опубліковано, тому посилання
+   повертає 404; після публікації воно запрацює без змін на сайті.
+2. **Правові сторінки.** `privacy.html` і `terms.html` підключені з усіх
+   чотирьох мовних версій. Документи доступні лише англійською; підписи
+   посилань у футері залишаються локалізованими. Перед публікацією
+   перевірте, що дати `Effective` / `Last updated` відповідають даті
+   публікації, а текст описує фактичний стан застосунку:
+   - Firebase Analytics увімкнений;
+   - ATT/IDFA не використовуються;
+   - окремого перемикача аналітики в застосунку немає.
 3. **Форма підтримки.** `support.html` вбудовує Microsoft Forms. Перевірте,
    що у формі вказано правильний текст згоди та посилання на
    `https://kranus.com/SkladOk/privacy.html` (не `/policy`). Форма робить
@@ -86,29 +93,23 @@ python3 -m http.server 8000
 5. **OG-зображення.** За потреби перегенеруйте
    `assets/brand/og-image.png`, `og-image-en.png`, `og-image-ru.png` та
    `og-image-es.png` (1200×630).
+6. **iPad і Mac.** iPad уже підтримується, але лендінги поки що згадують
+   лише iPhone — варто оновити заголовки, мета-описи й тексти в усіх
+   чотирьох мовних версіях. Якщо Mac стане публічно доступним у Mac App
+   Store, додайте і його.
 
 Підтримка: `support@kranus.com`.
 
 ## Перевірено
 
 - Реальні екрани застосунку, без вигаданих відгуків, статистики чи рейтингів.
-- Lighthouse (Chromium, simulated mobile, gzip + cache headers): Performance 98,
-  Accessibility 100, Best Practices 100, SEO 100 в усіх чотирьох версіях.
-  FCP 1.4 s, LCP 2.3 s, CLS 0, TBT 0 ms.
-- Lighthouse для `privacy.html` і `terms.html`: Performance 100,
-  Accessibility 100, Best Practices 100, SEO 100.
-- `support.html`: повноекранний iframe Microsoft Forms завантажується
-  (заголовок і поля форми доступні), сторінка адаптивна на 1440/768/375/320 px,
-  без горизонтального скролу; `<noscript>` показує посилання на форму.
-  Lighthouse для цієї сторінки не запускався: вона містить лише
-  cross-origin iframe, тому Lighthouse не фіксує FCP.
-- axe-core: 0 порушень (WCAG 2.1 AA + best practices) в усіх чотирьох версіях
-  та на сторінках `privacy.html`, `terms.html`, `support.html`.
+- Lighthouse і axe-core (на момент останньої перевірки): Accessibility,
+  Best Practices і SEO — 100; 0 порушень WCAG 2.1 AA на всіх сторінках.
+  `support.html` не оцінювався Lighthouse через cross-origin iframe.
 - Усі внутрішні посилання на семи сторінках повертають 200; усі 7 URL із
   `sitemap.xml` доступні; JSON-LD парситься без помилок.
-- Усі 16 правових placeholder-посилань замінені; App Store URL вказано як
-  `https://apps.apple.com/app/id6834417596` (застосунок ще не опубліковано).
-- CLS 0; усі зображення мають `width`/`height` і адаптивний `srcset`.
+- Адаптивність 320–1440 px без горизонтального скролу; усі зображення мають
+  `width`/`height` і адаптивний `srcset`; CLS 0.
 - Валюта за замовчуванням — валюта регіону пристрою; на UA-екранах показано
   ₴ (UAH), на EN-, RU- та ES-екранах — $ (USD).
 - Підтримка `prefers-reduced-motion`, клавіатурна навігація, focus trap у
